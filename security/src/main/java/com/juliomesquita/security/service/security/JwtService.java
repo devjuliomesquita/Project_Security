@@ -20,7 +20,7 @@ public class JwtService {
     private static final String SECRET_KET = "89453427ed7b3a859b1bf56ad990ef6046d38ec3fa9703d53ee9fa74a4490f5a";
 
     public String extractUserName(String token) {
-        return null;
+        return extractClaim(token, Claims::getSubject);
     }
 
     public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
