@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d84975b-dc12-4836-983f-eb9b0cd3d06f" name="Changes" comment="WIP - SecurityConfig - init">
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/model/dto/AuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/model/dto/RegisterRequest.java" afterDir="false" />
+    <list default="true" id="6d84975b-dc12-4836-983f-eb9b0cd3d06f" name="Changes" comment="WIP - SecurityConfig - criado - EndPoints em andamento">
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Security.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/persistence/security/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/persistence/security/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,13 +108,56 @@
       <option name="project" value="LOCAL" />
       <updated>1696256261488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WIP - SecurityConfig - criado - EndPoints em andamento">
+      <option name="closed" value="true" />
+      <created>1696272226555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696272226555</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WIP - JWTSERVICE - CREATE" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="WIP - SecurityConfig - init" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP - SecurityConfig - init" />
+    <MESSAGE value="WIP - SecurityConfig - criado - EndPoints em andamento" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP - SecurityConfig - criado - EndPoints em andamento" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
+          <line>31</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/DemoController.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
