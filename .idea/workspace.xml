@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d84975b-dc12-4836-983f-eb9b0cd3d06f" name="Changes" comment="WIP - JWTSERVICE - CREATE">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="6d84975b-dc12-4836-983f-eb9b0cd3d06f" name="Changes" comment="WIP - SecurityConfig - init">
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/model/dto/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/model/dto/RegisterRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Security.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -49,17 +52,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/julio/Documents/Projetos/Projetos Pessoal/Project Security",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/julio/Documents/Projetos/Projetos Pessoal/Project Security&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.juliomesquita.security.SecurityApplication" />
@@ -97,12 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696198375411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WIP - SecurityConfig - init">
+      <option name="closed" value="true" />
+      <created>1696256261488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696256261488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WIP - JWTSERVICE - CREATE" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="WIP - SecurityConfig - init" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP - SecurityConfig - init" />
   </component>
 </project>
