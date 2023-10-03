@@ -17,7 +17,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    private static final String SECRET_KET = "89453427ed7b3a859b1bf56ad990ef6046d38ec3fa9703d53ee9fa74a4490f5a";
+    private static final String SECRET_KET = "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970";
 
     public String extractUserName(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -28,15 +28,15 @@ public class JwtService {
         return claimsResolver.apply(claims);
     }
     private Claims extractAllClaims(String token) {
-        return Jwts // claim criada
+        return Jwts
                 .parserBuilder()
-                .setSigningKey(getSingInKey()) //Chave para criptografar
+                .setSigningKey(getSignInKey())
                 .build()
-                .parseClaimsJwt(token)
+                .parseClaimsJws(token)
                 .getBody();
     }
 
-    private Key getSingInKey() {
+    private Key getSignInKey() {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KET);
         return Keys.hmacShaKeyFor(keyBytes);
     }
@@ -54,7 +54,7 @@ public class JwtService {
                 .setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 24))
-                .signWith(getSingInKey(), SignatureAlgorithm.HS256)
+                .signWith(getSignInKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
 

@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d84975b-dc12-4836-983f-eb9b0cd3d06f" name="Changes" comment="WIP - SecurityConfig - criado - EndPoints em andamento">
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/persistence/security/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/persistence/security/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,24 +128,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
-          <line>31</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/DemoController.java</url>
           <line>12</line>
           <option name="timeStamp" value="4" />
@@ -157,7 +137,87 @@
           <line>24</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/10.1.13/tomcat-embed-core-10.1.13.jar!/jakarta/servlet/ServletException.class</url>
+          <line>7</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.1.4/spring-security-core-6.1.4.jar!/org/springframework/security/access/AccessDeniedException.class</url>
+          <line>9</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-20/lib/src.zip!/java.base/java/lang/NullPointerException.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.web.FilterChainProxy$VirtualFilterChain" memberName="additionalFilters" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
