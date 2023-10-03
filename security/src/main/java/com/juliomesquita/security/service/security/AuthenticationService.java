@@ -35,7 +35,7 @@ public class AuthenticationService {
     }
 
     public AuthenticationResponse authenticate(AuthenticateRequest request) {
-        Authentication authenticate = this.authenticationManager.authenticate(
+        this.authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.getUsername(),
                         request.getPassword()
