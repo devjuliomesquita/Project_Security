@@ -53,6 +53,9 @@ public class AuthenticationService {
     }
 
     public void oAuthUser(CustomOAuthUser oAuthUser) {
+        //Verificar se o usuário que veio existe cadastado
+        //Caso não esteja cadastrar
+        //Caso esteja gerar o token
         return;
     }
 }
