@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d84975b-dc12-4836-983f-eb9b0cd3d06f" name="Changes" comment="WIP - SecurityConfig - criado - EndPoints em andamento">
+    <list default="true" id="6d84975b-dc12-4836-983f-eb9b0cd3d06f" name="Changes" comment="WIP - Spring security Parte 1">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9757436907d910f3cdabf2c56266c6331c17289" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9757436907d910f3cdabf2c56266c6331c17289" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbb79d5f2c11ba67d723b8db7d164a6f8dfdcfd2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbb79d5f2c11ba67d723b8db7d164a6f8dfdcfd2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/persistence/security/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/persistence/security/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +118,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696272226555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="WIP - Spring security Parte 1">
+      <option name="closed" value="true" />
+      <created>1696357292675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696357292675</updated>
+    </task>
+    <task id="LOCAL-00005" summary="WIP - Spring security Parte 1">
+      <option name="closed" value="true" />
+      <created>1696358146614</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696358146614</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -122,90 +142,16 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="WIP - SecurityConfig - init" />
     <MESSAGE value="WIP - SecurityConfig - criado - EndPoints em andamento" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP - SecurityConfig - criado - EndPoints em andamento" />
+    <MESSAGE value="WIP - Spring security Parte 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP - Spring security Parte 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/DemoController.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/SecurityConfig.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/mapper/security/UserMapper.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/10.1.13/tomcat-embed-core-10.1.13.jar!/jakarta/servlet/ServletException.class</url>
-          <line>7</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.1.4/spring-security-core-6.1.4.jar!/org/springframework/security/access/AccessDeniedException.class</url>
-          <line>9</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-20/lib/src.zip!/java.base/java/lang/NullPointerException.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/controller/security/AuthenticationController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/AuthenticationService.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/configuration/security/JwtAuthenticationFilter.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/juliomesquita/security/service/security/JwtService.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="23" />
+          <line>32</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
