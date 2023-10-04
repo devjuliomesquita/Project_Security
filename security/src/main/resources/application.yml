@@ -15,3 +15,13 @@ spring:
         format_sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 402654233491-7ijmuu4r7ri4bdobm0eebt8i71fqlp51.apps.googleusercontent.com
+            clientSecret: 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
+            scope:
+              - email
+              - profile

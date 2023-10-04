@@ -4,11 +4,13 @@ import com.juliomesquita.security.mapper.security.UserMapper;
 import com.juliomesquita.security.model.security.dto.AuthenticateRequest;
 import com.juliomesquita.security.model.security.dto.AuthenticationResponse;
 import com.juliomesquita.security.model.security.dto.RegisterRequest;
+import com.juliomesquita.security.persistence.security.entities.CustomOAuthUser;
 import com.juliomesquita.security.persistence.security.entities.User;
 import com.juliomesquita.security.persistence.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -48,5 +50,9 @@ public class AuthenticationService {
                 .token(jwtToken)
                 .build();
 
+    }
+
+    public void oAuthUser(CustomOAuthUser oAuthUser) {
+        return;
     }
 }
